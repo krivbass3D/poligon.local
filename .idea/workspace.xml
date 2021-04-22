@@ -15,16 +15,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75430825-3d4d-48c2-98f5-6705dfcff762" name="Default Changelist" comment="Добавлена страница редактирования категорий">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+    <list default="true" id="75430825-3d4d-48c2-98f5-6705dfcff762" name="Default Changelist" comment="Добавлена страница редактирования категорий исправления">
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/category/includes/item_edit_add_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_add_col.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/category/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +154,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1rCvrM6z1w9igStLVCS9zvzRqwP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -170,7 +165,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -206,6 +201,11 @@
       <workItem from="1618898666507" duration="62000" />
       <workItem from="1618921875993" duration="794000" />
       <workItem from="1619008267543" duration="2522000" />
+      <workItem from="1619010834612" duration="1063000" />
+      <workItem from="1619012008017" duration="3479000" />
+      <workItem from="1619070721180" duration="622000" />
+      <workItem from="1619071540448" duration="3318000" />
+      <workItem from="1619099844012" duration="339000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен контроллер Posts">
       <created>1618583790535</created>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618837939344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлена страница редактирования категорий исправления">
+      <created>1619010876524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619010876524</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,25 +255,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлен контроллер Posts" />
     <MESSAGE value="Добавлена страница редактирования категорий" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена страница редактирования категорий" />
+    <MESSAGE value="Добавлена страница редактирования категорий исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена страница редактирования категорий исправления" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1618495989082">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1618495989082" />
+    <state x="831" y="478" key="Github.ShareDialog" timestamp="1619012777130">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="831" y="478" key="Github.ShareDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1619012777130" />
     <state x="748" y="784" key="NewPhpFileDialog" timestamp="1618835635259">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="748" y="784" key="NewPhpFileDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1618835635259" />
-    <state x="393" y="450" width="1241" height="710" key="SettingsEditor" timestamp="1618564894904">
+    <state x="355" y="351" width="1241" height="710" key="SettingsEditor" timestamp="1619012466416">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="393" y="450" width="1241" height="710" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1618564894904" />
-    <state x="667" y="313" width="585" height="534" key="find.popup" timestamp="1618576424150">
+    <state x="355" y="351" width="1241" height="710" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1619012466416" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1619012800289">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="667" y="313" width="585" height="534" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1618576424150" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1619012800289" />
+    <state x="667" y="313" width="585" height="534" key="find.popup" timestamp="1619099940817">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="667" y="313" width="585" height="534" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1619099940817" />
     <state x="568" y="166" key="run.anything.popup" timestamp="1618573510898">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
