@@ -25,20 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75430825-3d4d-48c2-98f5-6705dfcff762" name="Default Changelist" comment="Добавлена страница редактирования категорий исправления">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogCategoryCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogCategoryUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_15_04_2021__17_00.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/poligon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poligon.local.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+    <list default="true" id="75430825-3d4d-48c2-98f5-6705dfcff762" name="Default Changelist" comment="Добавлено CRUD категорий">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +174,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -231,7 +222,11 @@
       <workItem from="1622384407986" duration="606000" />
       <workItem from="1622436680520" duration="13000" />
       <workItem from="1622655789885" duration="2493000" />
-      <workItem from="1622966920076" duration="11273000" />
+      <workItem from="1622966920076" duration="12830000" />
+      <workItem from="1623011239842" duration="843000" />
+      <workItem from="1623042135654" duration="1241000" />
+      <workItem from="1623089817078" duration="2477000" />
+      <workItem from="1623125918653" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен контроллер Posts">
       <created>1618583790535</created>
@@ -254,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619010876524</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлено CRUD категорий">
+      <created>1623006503822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623006503822</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,21 +295,27 @@
     <MESSAGE value="Добавлен контроллер Posts" />
     <MESSAGE value="Добавлена страница редактирования категорий" />
     <MESSAGE value="Добавлена страница редактирования категорий исправления" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена страница редактирования категорий исправления" />
+    <MESSAGE value="Добавлено CRUD категорий" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено CRUD категорий" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1622656322587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1622656322587" />
-    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1618495989082">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="740" y="303" key="FileChooserDialogImpl" timestamp="1623042933108">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="740" y="303" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1623042933107" />
     <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1618495989082" />
     <state x="831" y="478" key="Github.ShareDialog" timestamp="1619012777130">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="831" y="478" key="Github.ShareDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1619012777130" />
+    <state x="631" y="247" key="NewPhpClassDialog" timestamp="1623090885239">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="631" y="247" key="NewPhpClassDialog/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1623090885239" />
     <state x="748" y="784" key="NewPhpFileDialog" timestamp="1618835635259">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -316,9 +324,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="355" y="351" width="1241" height="710" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1619012466416" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1619012800289">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="552" y="283" key="Vcs.Push.Dialog.v2" timestamp="1623006548141">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="552" y="283" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1623006548141" />
     <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1619012800289" />
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619111917255">
       <screen x="0" y="0" width="1920" height="1050" />
