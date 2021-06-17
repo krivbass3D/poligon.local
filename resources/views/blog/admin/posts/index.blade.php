@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                    <a class="btn btn-primary" href="{{ route('blog.admin.categories.create') }}">Добавить</a>
+                    <a class="btn btn-primary" href="{{ route('blog.admin.posts.create') }}">Написать</a>
                 </nav>
                 <div class="card">
                     <div class="card-body">
@@ -12,26 +12,25 @@
                             <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Автор</th>
                                 <th>Категория</th>
-                                <th>Родитель</th>
+                                <th>Заголовок</th>
+                                <th>Дата публикации</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($paginator as $item)
-                                @php /**  @var \App\Models\BlogCategory $item   */@endphp
-                                <tr>
-                                    <td>{{ $item->id }}</td>
-                                    <td><a href="{{ route('blog.admin.categories.edit', $item->id) }}">
-                                            {{ $item->title }}
-                                        </a>
+                            @foreach($paginator as $post)
+                                @php /**  @var \App\Models\BlogCategory $post   */@endphp
+                                <tr @if(!$post->is_published) style="background-color: #ccc" @endif>
+                                    <td>{{ $post->id }}</td>
+                                    <td>{{ $post->user->name }}</td>
+                                    <td>{{ $post->category->title }}</td>
+                                    <td>
+                                        <a href="{{ route('blog.admin.posts.edit', $post->id)}}">{{ $post->title }}</a>
                                     </td>
-                                    <td @if(in_array($item->parent_id, [0,1])) style="color: #ccc"  @endif>
-                                        {{ $item->parent_id }}{{-- $item->parentCategory->title--}}
-                                        </a>
-                                    </td>
+                                    <td>{{ $post->published_at ? \Carbon\Carbon::parse($post->published_at)->format('d.M. H:i'):'' }}</td>
                                 </tr>
                             @endforeach
-
                             </tbody>
                         </table>
                     </div>
